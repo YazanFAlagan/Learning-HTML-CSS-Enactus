@@ -6,6 +6,7 @@ This repository contains resources and projects related to learning HTML and CSS
 
 - [Introduction](#introduction)
 - [Project Overview](#project-overview)
+- [License](#license)
 - [Getting Started](#getting-started)
 
 ## Introduction
