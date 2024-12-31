@@ -21,6 +21,9 @@ The repository contains the following:
 - **Styling Techniques**: Advanced CSS concepts, such as animations and transitions.
 - **Sample Projects**: Small projects to demonstrate HTML and CSS in action.
 
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ## Getting Started
 
 To get started with this repository, follow these steps:
