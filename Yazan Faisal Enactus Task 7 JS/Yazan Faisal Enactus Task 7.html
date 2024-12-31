@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yazan Faisal Enactus Task 7</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            text-align: center;
+        }
+        input, button {
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grade Evaluation</h1>
+    <p>Enter your grade (0-100):</p>
+    <input type="number" id="gradeInput" placeholder="Enter grade">
+    <br>
+    <button onclick="EDG()">Submit</button>
+    <h2 id="result"></h2>
+    <script>
+        function EDG() {
+            let grade = document.getElementById("gradeInput").value;
+            grade = Number(grade);
+            let result;
+            switch (true) {
+                case (grade >= 85 && grade <= 100):
+                    result = "Excellent";
+                    break;
+                case (grade >= 75 && grade < 85):
+                    result = "Very Good";
+                    break;
+                case (grade >= 65 && grade < 75):
+                    result = "Good";
+                    break;
+                case (grade >= 50 && grade < 65):
+                    result = "Acceptable";
+                    break;
+                case (grade >= 0 && grade < 50):
+                    result = "Failed";
+                    break;
+                default:
+                    result = "Invalid grade. Please enter a grade between 0 and 100.";
+                    break;
+            }
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>

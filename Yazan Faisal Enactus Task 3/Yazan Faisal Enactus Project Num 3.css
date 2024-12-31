@@ -1,0 +1,35 @@
+body 
+{
+    font-family: 'poppins',sans-serif;
+}
+
+h1 
+{
+    text-align: center;
+}
+
+.C 
+{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.PI 
+{
+    border: 1px solid#000;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.PI img 
+{
+    width: 150px;
+    height: 150px;
+}
+
+.AM 
+{
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}

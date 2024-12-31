@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yazan Faisal Enactus Task 8 JS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 1000;
+        }
+
+        img {
+            width: 300px;
+            transition: transform 0.5s ease, filter 0.5s ease;
+            display: block;
+            padding-top: 46px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: #27ae60;">Put ur Pointer on the Photo</h1>
+    <h1 style="color: #229954">Put ur Pointer on the Photo</h1>
+    <h1 style="color: #1e8449">Put ur Pointer on the Photo</h1>
+    <h1 style="color: #196f3d">Put ur Pointer on the Photo</h1>
+    <img id="ZI" src="C:\Users\elkin\OneDrive - Assuit University\Important\Tasks\HTML & CSS & JS\Yazan Faisal Enactus Task 8 JS\OB.jpeg" alt="Image" onmouseover="zoomInAndChangeImage()" onmouseout="zoomOutAndRevertImage()">
+
+    <script>
+        const image = document.getElementById('ZI');
+
+        const originalSrc = image.src;
+
+        const newSrc = 'C:\\Users\\elkin\\OneDrive - Assuit University\\Important\\Tasks\\HTML & CSS & JS\\Yazan Faisal Enactus Task 8 JS\\OS.jpg'; 
+
+        function zoomInAndChangeImage() {
+            image.style.transform = 'scale(1.5)';
+            image.src = newSrc;
+        }
+
+        function zoomOutAndRevertImage() {
+            image.style.transform = 'scale(1)';
+            image.src = originalSrc;
+        }
+    </script>
+</body>
+</html>
